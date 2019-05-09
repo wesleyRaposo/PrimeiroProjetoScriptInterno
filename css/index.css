@@ -1,0 +1,15 @@
+p{
+    text-align: justify;
+    margin: 0px 0px;
+    /*width: 65%;*/
+    /*border: 1px solid gray;*/
+}
+
+blockquote{
+    background-color: #D3DDDA;
+    padding: 16px;
+    border: 10px solid #C2CCCA;
+    width: 250px;
+    margin: 0;
+    box-sizing: border-box;    
+}

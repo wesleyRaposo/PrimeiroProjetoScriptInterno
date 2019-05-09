@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="HTML,CSS,Bio">
+        <meta name="author" content="João da Silva">
+        <meta name="description" content="Página profissional de João da Silva">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="icon" href="img/favicon.png">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/site.css">
+        <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+        <link rel="import" href="menu_lateral.html">
+    </head>
+    <body>
+        <main>
+            <h1>Portfolio</h1>
+            
+            <div class="container">
+            
+                <p>Veja abaixo a lista dos meus projetos mais relevantes</p>
+            
+                <ul class="portfolio">
+
+                    <li>
+                        <a href="https://www.bmw.com.br">
+                            <figure>
+                                <img src="img/portfolio/bmw.png" alt="Site da BWM">
+                                <figcaption>BMW.com: reformulação de design e implementação de HTML, CSS e JavaScript</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.uol.com.br">
+                            <figure>
+                                <img src="img/portfolio/uol.png" alt="Site do UOL">
+                                <figcaption>UOL.com.br: reformulação de design e implementação de HTML, CSS e JavaScript</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ibm.com/br-pt">
+                            <figure>
+                                <img src="img/portfolio/ibm.png" alt="Site da IBM">
+                                <figcaption>IBM.com: aplicação de progressive enhancement em conjunto com aplicação back-end</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://g1.globo.com">
+                            <figure>
+                                <img src="img/portfolio/g1.png" alt="Site da Globo.com">
+                                <figcaption>G1.com.br: reformulação de design e implementação de HTML, CSS e JavaScript</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>          
+            
+            </div>
+            
+        </main>
+    
+        <div id="menu_lateral"></div>
+        <script>
+            var link = document.querySelector('link[rel="import"]');
+
+            // Clone the <template> in the import.
+            var template = link.import.querySelector('template');
+            var clone = document.importNode(template.content, true);
+
+            document.querySelector('#menu_lateral').appendChild(clone);
+        </script>        
+        
+        <footer>
+            &copy; João da Silva 2019
+        </footer>
+    </body>
+</html>

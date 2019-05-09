@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Contato</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="HTML,CSS,Bio">
+        <meta name="author" content="João da Silva">
+        <meta name="description" content="Página profissional de João da Silva">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="img/favicon.png">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/site.css">
+        <link rel="stylesheet" href="css/contato.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="import" href="menu_lateral.html">
+    </head>
+    <body>
+        <main>
+            <h1>Fale com o João</h1><br/>
+            
+            <div>
+                <p><a id="botao-bonito" class="fas fa-car botao-flutuante botao-flutuante1" href="#"> Botão de Link 1</a></p>
+                <p><a id="botao-bonito" class="fas fa-car botao-flutuante botao-flutuante2" href="#"> Botão de Link 2</a></p>
+                <p><a id="botao-bonito" class="fas fa-car botao-flutuante botao-flutuante3" href="#"> Botão de Link 3</a></p>
+                <p><a id="botao-bonito" class="fas fa-car botao-flutuante botao-flutuante4" href="#"> Botão de Link 4</a></p>
+            </div>
+            
+        </main>
+        
+        <div id="menu_lateral"></div>
+        <script>
+            var link = document.querySelector('link[rel="import"]');
+
+            // Clone the <template> in the import.
+            var template = link.import.querySelector('template');
+            var clone = document.importNode(template.content, true);
+
+            document.querySelector('#menu_lateral').appendChild(clone);
+        </script>        
+
+        <footer>
+            &copy; João da Silva 2019
+        </footer>        
+    </body>
+</html>

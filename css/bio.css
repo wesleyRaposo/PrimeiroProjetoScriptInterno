@@ -1,0 +1,32 @@
+
+h2{
+    font-size:30px;
+    margin: 30px 0px;
+    font-family: "Open Sans Condensed", sans-serif;
+    clear: both;
+}
+
+p{
+    text-align: justify;
+    /*margin: 30px;*/
+    /*width: 65%;*/
+    /*border: 1px solid gray;*/
+}
+
+blockquote{
+    background-color: #D3DDDA;
+    padding: 16px;
+    border: 10px solid #C2CCCA;
+    width: 250px;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+blockquote p {
+    margin: 30px 0px;
+}
+
+em{
+    font-style: italic;
+}
+
